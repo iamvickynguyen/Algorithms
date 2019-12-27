@@ -1,3 +1,13 @@
+from math import factorial as fac
+
+# calculate binomial coefficients
+def binomial(x, y):
+    try:
+        binom = fac(x) // fac(y) // fac(x - y)
+    except ValueError:
+        binom = 0
+    return binom
+
 # count total number of odd coefficients
 table = {}
 def count_odd_coefficients(n):

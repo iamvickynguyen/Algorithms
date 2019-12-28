@@ -1,2 +1,2 @@
 # Algorithms & Data Structures
-Some useful algorithms and data structures
+I create this repo because I find these tools are interesting, and may be useful in some cases.

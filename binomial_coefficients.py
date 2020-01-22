@@ -7,6 +7,11 @@ def binomial(x, y):
     except ValueError:
         binom = 0
     return binom
+	
+# calculate binomial coefficients (method 2)
+def nCr(n, r):
+    f = math.factorial
+    return f(n) // f(r) // f(n-r)
 
 # count total number of odd coefficients
 table = {}

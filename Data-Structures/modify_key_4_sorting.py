@@ -1,8 +1,5 @@
+# sort a list of tuples or strings by comparing their 1st element then 2nd element
 import functools
-
-# suppose you want to sort a list of strings by comparing their 1st char then 2nd char
-# this function modify compare function
-
 
 def cmp_key(x, y):
     if x[0] == y[0]:
@@ -13,8 +10,14 @@ def cmp_key(x, y):
     else:
         return 1 if x[0] > y[0] else -1
 
+# test tuples
+numbers = [(4, 10), (4, 9), (3, 3), (3, 2), (3, 3), (1, 5)]
+sorted_numbers = sorted(numbers, key=functools.cmp_to_key(cmp_key))
+print(sorted_numbers)
+# [(1, 5), (3, 2), (3, 3), (3, 3), (4, 9), (4, 10)]
 
-# test
+# test strings
 names = ['Vicky', 'Nguyen', 'Naruto', 'hokage', 'sasuke']
 sorted_name = sorted(names, key=functools.cmp_to_key(cmp_key))
 print(sorted_name)
+# ['Naruto', 'Nguyen', 'Vicky', 'hokage', 'sasuke']

@@ -2,7 +2,7 @@
 numbers = [(4, 10), (4, 9), (3, 3), (3, 2), (3, 3), (1, 5)] # [(1, 5), (3, 2), (3, 3), (3, 3), (4, 9), (4, 10)]
 names = ['vicky', 'nguyen', 'vampire', 'naruto', 'sasuke'] # ['hokage', 'naruto', 'nguyen', 'sasuke', 'vicky']
 
-# METHOD 1: sort function will compare x[0] first then x[1]
+# METHOD 1: sort function will compare tuple[0] first then tuple[1],...,tuple[n]
 numbers_1 = sorted(numbers, key=lambda x: (x[0], x[1]))
 names_1 = sorted(names, key=lambda x: (x[0], x[1]))
 names_2 = sorted(names, key=lambda x: (len(x), x[0])) # sort list in increasing length; if equal length, sort in alphabetical order

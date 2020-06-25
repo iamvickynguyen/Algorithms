@@ -1,5 +1,6 @@
 /* 
 	Floyd Warshall - All pairs shortest path
+	It can only be used for small graph (V < 400) in CP
 	https://open.kattis.com/problems/allpairspath
 */
 

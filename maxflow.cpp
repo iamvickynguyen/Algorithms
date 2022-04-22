@@ -9,7 +9,9 @@ typedef pair<ll, ll> pll;
 
 // Reference: https://github.com/stevenhalim/cpbook-code/blob/master/ch8/maxflow.cpp
 // Note: a bit slower than stevenhalim's implementation, but more space efficient and
-// finding flow value of an edge is easier
+// finding flow value of an edge is easier. Well |V| and |E| in maxflow problems are
+// usually small, so space is not too concerning. Using 1 adjacency list (graph) is more
+// intuitive to me than using an adjacency list and an edge list that's all.
 
 const ll INF = 1e18;
 

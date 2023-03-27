@@ -4,6 +4,7 @@
 #include <climits>
 using namespace std;
 
+// Reference: https://www.geeksforgeeks.org/print-all-shortest-paths-between-given-source-and-destination-in-an-undirected-graph/
 void find_paths(vector<vector<int>>& paths, vector<int>& path, vector<vector<int>>& parents, const int n, const int u) {
 	if (u == -1) {
 		paths.push_back(path);
